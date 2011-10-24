@@ -28,7 +28,7 @@
 		player = new YT.Player('player', {
 			height: '880',
 			width: '1280',
-			videoId: 'DUT5rEU6pqM', /*'wjLgekyOZA0', /*'DdKWBUH0a4Y', /*'DUT5rEU6pqM', 'KcmDE-Qtmmw',*/
+			videoId: 'wjLgekyOZA0', /*'DdKWBUH0a4Y', /*'DUT5rEU6pqM', 'KcmDE-Qtmmw',*/
 			playerVars: {
 				controls: '0'
 			},
@@ -38,7 +38,8 @@
 				'onError': onError
 			}
 		});
-		player.setPlaybackQuality('hd1080');
+		//player.setPlaybackQuality('hd1080');
+		player.playVideo();
 		
 		player2 = new YT.Player('player2', {
 			height: '390',
@@ -53,6 +54,7 @@
 				'onError': onError
 			}
 		});
+		player.playVideo();
 	}
 	
 	
