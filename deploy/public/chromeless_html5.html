@@ -2,7 +2,7 @@
 	<head>
 		<style type="text/css">
 			#player2{
-				visibility: hidden;
+				/*visibility: hidden;*/
 			}
 		</style>
 	</head>
@@ -39,7 +39,7 @@
 			}
 		});
 		//player.setPlaybackQuality('hd1080');
-		player.playVideo();
+		//player.playVideo();
 		
 		player2 = new YT.Player('player2', {
 			height: '390',
@@ -54,7 +54,7 @@
 				'onError': onError
 			}
 		});
-		player.playVideo();
+		player2.playVideo();
 	}
 	
 	
