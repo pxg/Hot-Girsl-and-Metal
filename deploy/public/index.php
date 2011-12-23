@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<title>Hot Girls and Metal!</title>
 		<script src="/_assets/js/site.js"></script>
 		<link rel="stylesheet" href="/_assets/css/site.css">
 	</head>
