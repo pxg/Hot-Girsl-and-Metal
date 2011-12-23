@@ -72,17 +72,16 @@ function stopVideo() {
 // Move to next track when button is pressed //////////////////////////////////////////////////////////////////////
 var videos =new Array();
 videos[0] = 'UCK0L6vqn8U'; // jessica simpson
-videos[1] = '7rz31VhUEoA';
-videos[2] = 'TKfl94x3ptg';
-videos[3] = 'VCLxJd1d84s';
-videos[4] = 'MakgTQ_Ubzs';
+videos[1] = 'TKfl94x3ptg';
+videos[2] = 'VCLxJd1d84s'; // TODO need to skip intro (put in xml)
+videos[3] = 'MakgTQ_Ubzs';
 
 var songs =new Array();
-songs[0] = 'F_6IjeprfEs'; //roots
-songs[1] = '7RJsRQOneMY'; //replica
-songs[2] = '_mWPPBW4DU8'; // davidian
-songs[3] = '9d4ui9q7eDM'; // holly wars
-songs[4] = 'AJ0sW7KOFhU'; // warriors of the world unite
+//songs[0] = 'F_6IjeprfEs'; //roots
+songs[0] = '7RJsRQOneMY'; //replica
+songs[1] = '_mWPPBW4DU8'; // davidian
+songs[2] = '9d4ui9q7eDM'; // holly wars
+songs[3] = 'AJ0sW7KOFhU'; // warriors of the world unite
 
 // TODO move to next track at the end of song/video too
 //$(window).load(function(){
@@ -93,7 +92,6 @@ $(document).ready(function() {
 		var nextSong = songs[(Math.random() * songs.length) | 0];
 		//TODO: get array from xml?
 		//TODO: toggle on randomisation and coupling
-		//alert(nextVideo + ' ' + nextSong);
 		player.loadVideoById(nextVideo);
 		player2.loadVideoById(nextSong);
 	});
