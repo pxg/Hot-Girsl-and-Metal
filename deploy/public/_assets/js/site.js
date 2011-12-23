@@ -24,10 +24,11 @@ function onYouTubePlayerAPIReady() {
 		}
 	});
 
+	// should  the sizes be 0 here?
 	player2 = new YT.Player('player2', {
 		height: '390',
 		width: '640',
-		videoId: 'p5vNZ1YYBWU',
+		videoId: 'Myj-q0OpETk',
 		playerVars: {
 			controls: '0'
 		},
@@ -69,14 +70,31 @@ function stopVideo() {
 }
 
 // Move to next track when button is pressed //////////////////////////////////////////////////////////////////////
+var videos =new Array();
+videos[0] = 'UCK0L6vqn8U'; // jessica simpson
+videos[1] = '7rz31VhUEoA';
+videos[2] = 'TKfl94x3ptg';
+videos[3] = 'VCLxJd1d84s';
+videos[4] = 'MakgTQ_Ubzs';
+
+var songs =new Array();
+songs[0] = 'F_6IjeprfEs'; //roots
+songs[1] = '7RJsRQOneMY'; //replica
+songs[2] = '_mWPPBW4DU8'; // davidian
+songs[3] = '9d4ui9q7eDM'; // holly wars
+songs[4] = 'AJ0sW7KOFhU'; // warriors of the world unite
+
 // TODO move to next track at the end of song/video too
 //$(window).load(function(){
 $(document).ready(function() {
 	// detect next button click
 	$("#next").click(function() {
-		//TODO: choose from array
+		var nextVideo = videos[(Math.random() * videos.length) | 0];
+		var nextSong = songs[(Math.random() * songs.length) | 0];
 		//TODO: get array from xml?
-		player.loadVideoById('UCK0L6vqn8U');
-		player2.loadVideoById('Myj-q0OpETk');
+		//TODO: toggle on randomisation and coupling
+		//alert(nextVideo + ' ' + nextSong);
+		player.loadVideoById(nextVideo);
+		player2.loadVideoById(nextSong);
 	});
 });
