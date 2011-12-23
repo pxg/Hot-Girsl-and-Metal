@@ -78,11 +78,5 @@ $(document).ready(function() {
 		//TODO: get array from xml?
 		player.loadVideoById('UCK0L6vqn8U');
 		player2.loadVideoById('Myj-q0OpETk');
-		//alert("Hello world!");
-		
 	});
 });
-
-// 3. switch video and song on button click
-// AkFqg5wAuFk // walk pantera
-// UCK0L6vqn8U // jesica simpson
