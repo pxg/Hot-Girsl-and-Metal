@@ -1,3 +1,13 @@
 #player2{
 	visibility: hidden;
+	position: absolute;
+	left: -999em;
+	/*display: none;*/
+}
+
+#next{
+	font-size: 125px;
+	text-transform: uppercase;
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
 }
