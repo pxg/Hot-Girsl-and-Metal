@@ -4,6 +4,8 @@
 		<script type="text/javascript" src="/_assets/js/lib/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript" src="/_assets/js/lib/jquery.fitvids.js"></script>
 		<script type="text/javascript" src="/_assets/js/site.js"></script>
+		
+		<link href='http://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/_assets/css/site.css">
 	</head>
 	
