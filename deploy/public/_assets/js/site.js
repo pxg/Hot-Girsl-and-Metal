@@ -52,8 +52,19 @@ function onError(event) {
 }
 
 function onPlayerStateChange(event) {
+	//TODO: add in switch statment instead 
+	// unstarted (-1), ended (0), playing (1), paused (2), buffering (3), video cued (5).
 	if(event.data === 0) {
 		$('#next').click();
+	}
+	
+	// pause should always be for player1 (video player)
+	if(event.data === 2){
+		player2.pauseVideo();
+	}
+	
+	if(event.data === 1){
+		player2.playVideo();
 	}
 }
 
