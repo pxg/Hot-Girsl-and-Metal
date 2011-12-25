@@ -5,9 +5,11 @@
 	/*display: none;*/
 }
 
-#next{
+#next a{
 	font-size: 125px;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-family: helvetica, arial, sans-serif;
 	margin: 0;
+	color: #000000;
 }

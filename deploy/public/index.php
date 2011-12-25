@@ -11,6 +11,6 @@
 		<div id="player2"></div>
 	</body>
 	
-	<p id="next">Next</p>
+	<p id="next"><a href="#">Next</a></p>
 	
 </html>
