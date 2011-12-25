@@ -1,15 +1,26 @@
+#player{
+	z-index: 1;
+}
+
 #player2{
 	visibility: hidden;
 	position: absolute;
 	left: -999em;
-	/*display: none;*/
+}
+
+#next{
+	z-index: 50;
 }
 
 #next a{
-	font-size: 125px;
+	font-size: 100px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: helvetica, arial, sans-serif;
 	margin: 0;
-	color: #000000;
+	color: #fff;
+	z-index: 50;
+	position: fixed;
+	top: 0;
+	right: 0;
 }

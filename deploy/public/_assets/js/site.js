@@ -9,11 +9,12 @@ var player2;
 
 function onYouTubePlayerAPIReady() {
 	player = new YT.Player('player', {
-		height: '880',
-		width: '1280',
+		height: '100%',
+		width: '100%',
 		videoId: 'DUT5rEU6pqM',
 		playerVars: {
-			controls: '0'
+			controls: '0',
+			wmode: "opaque"
 		},
 		events: {
 			'onReady': onPlayerReady,
@@ -73,6 +74,9 @@ function stopVideo() {
 }
 
 $(document).ready(function() {
+	$("#home").fitVids();
+	//$(".container").fitVids();
+	
 	var videos = new Array();
 	var songs = new Array();
 	
