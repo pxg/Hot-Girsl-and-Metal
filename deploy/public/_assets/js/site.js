@@ -67,6 +67,8 @@ function onPlayerStateChange(event) {
 	if(event.data === 1){
 		player2.playVideo();
 	}
+	
+	//TODO add check for buffering (can we get percentage?)
 }
 
 function stopVideo() {
